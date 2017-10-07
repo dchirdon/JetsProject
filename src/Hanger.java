@@ -45,7 +45,19 @@ public class Hanger {
 		}
 		return added;
 	}
-
+	
+	public boolean removedJet(String model2) {
+		boolean removed = false;
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i].model.equals(model2)) {
+				jets[i] = null;
+				removed = true;
+				break;
+			}
+		}
+		return removed;
+	}
+	
 	public void listJets() {
 		System.out.println("== Jets in this Airwing ==");
 		for (Jet jet : jets) {
