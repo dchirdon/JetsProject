@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class AirwingDriver {
 
-	private static int price;
+	// private static int price;
 
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		int request;
 		Hanger h = new Hanger();
-		Jet jet = new Jet();
+		//Jet jet = new Jet();
 		AirwingDriver awd = new AirwingDriver();
 		
 		request = awd.menu();
@@ -56,6 +56,8 @@ public class AirwingDriver {
 
 			}
 			request = awd.menu();
+			
+			kb.close();
 		}
 	}
 
